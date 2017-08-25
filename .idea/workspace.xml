@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02e8c341-28d2-4ac6-87cb-61ba957078f1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/constants/animations.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/constants/links.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/constants/styles.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/constants/translations/en.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/modules/app-container/app-container.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/modules/common/styled-utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/modules/home/home.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/modules/logo/logo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/modules/navigation/nagivation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/modules/typewriter/typewriter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/state/actions/action-types.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/state/actions/menu-toggle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/state/actions/type-writer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/state/configure-store.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/state/reducers/menu-toggle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/state/reducers/type-writer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/state/root-reducer.js" />
-    </list>
+    <list default="true" id="02e8c341-28d2-4ac6-87cb-61ba957078f1" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -39,8 +21,8 @@
       <file leaf-file-name="home.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/modules/home/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
-              <caret line="55" column="37" lean-forward="true" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
+            <state relative-caret-position="825">
+              <caret line="71" column="17" lean-forward="false" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
                 <marker date="1503619435000" expanded="true" signature="1620:2099" ph="..." />
@@ -430,12 +412,12 @@
       <updated>1502593152202</updated>
       <workItem from="1502593154175" duration="3869000" />
       <workItem from="1502752431594" duration="1000" />
-      <workItem from="1503448911665" duration="28749000" />
+      <workItem from="1503448911665" duration="28918000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32619000" />
+    <option name="totallyTimeSpent" value="32788000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -724,8 +706,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/modules/home/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="55" column="37" lean-forward="true" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
+        <state relative-caret-position="825">
+          <caret line="71" column="17" lean-forward="false" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
             <marker date="1503619435000" expanded="true" signature="1620:2099" ph="..." />
