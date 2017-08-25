@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
+import ScrollableAnchor from 'react-scrollable-anchor';
 import { typeWriterText } from '../../state/actions/type-writer';
 import { COLORS, FONT_SIZE, FONT_WEIGHT } from '../../constants/styles';
 import TypeWriter from '../typewriter/typewriter';
 import EN from '../../constants/translations/en';
 
 const homeImg = require('../../images/home-image.jpg');
-const PageContainer = styled.div`
-`;
+
 const HomeDiv = styled.div`
   display: flex;
   height: 100vh;
@@ -17,24 +17,20 @@ const HomeDiv = styled.div`
 
 const HomeImage = styled.img`
   height: 100%;
-  width: 100%;
+  width: 100vw;
+  position: absolute;
+  left: 0;
 `;
 
 const TextContainer = styled.div`
   position: absolute;
   bottom: 250px;
-  left: 500px;
+  left: 450px;
   color: ${COLORS.WHITE.WHITE};
 `;
 const Text = styled.div`
   font-size: ${props => props.fontSize};
   font-weight: ${props => props.fontWeight};
-`;
-
-const OtherContainer = styled.div`
-  display:block; 
-  width:100%;
-  height: 500px;
 `;
 
 const mapToStateProps = state => ({
@@ -60,7 +56,7 @@ class Home extends Component {
   render() {
     const { selectedText } = this.props;
     return (
-      <PageContainer>
+      <ScrollableAnchor id={EN.portfolio.links.home}>
         <HomeDiv>
           <HomeImage src={homeImg} />
           <TextContainer>
@@ -73,8 +69,7 @@ class Home extends Component {
             <TypeWriter text={selectedText} />
           </TextContainer>
         </HomeDiv>
-        <OtherContainer />
-      </PageContainer>
+      </ScrollableAnchor>
     );
   }
 }

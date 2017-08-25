@@ -8,4 +8,4 @@ export const SKILL = { title: EN.portfolio.links.skill, value: '/skill' };
 export const PORTFOLIO = { title: EN.portfolio.links.portfolio, value: '/portfolio' };
 export const CONTACT = { title: EN.portfolio.links.contact, value: '/contact' };
 
-export const ALL_LINKS = [HOME, ABOUT, SERVICE, RESUME, SKILL, PORTFOLIO, CONTACT];
+export const ALL_LINKS = [HOME, ABOUT, SKILL, SERVICE, RESUME, PORTFOLIO, CONTACT];

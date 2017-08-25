@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import styled from 'styled-components';
+import { removeHash } from 'react-scrollable-anchor';
 import { ALL_LINKS } from '../../constants/links';
 import { COLORS, PADDING, MARGIN } from '../../constants/styles';
 import { OPACITY } from '../../constants/animations';
+import { anchor } from '../../state/actions/anchor';
 import Logo from '../../modules/logo/logo';
 
 const Container = styled.div`
@@ -38,6 +41,7 @@ const NavLink = styled.a`
   cursor: pointer;
   color:${COLORS.WHITE.WHITE};
   padding: ${PADDING.THREE_QUARTERS} ${PADDING.NORMAL_AND_HALF};
+  text-decoration: none;
   &:hover{
     animation: ${OPACITY} .75s;
     box-shadow: 15px 0 0 0 ${COLORS.YELLOW.YELLOW} inset;
@@ -53,9 +57,19 @@ const NavLink = styled.a`
     color: ${COLORS.YELLOW.YELLOW};
    }
 `;
+
+const mapToStateProps = state => ({
+  activeAnchor: state.anchor.currentAnchor,
+});
+
+const mapDispatchToProps = dispatch => ({
+  setAnchor: selectAnchor => dispatch(anchor(selectAnchor)),
+});
+
 class Navigation extends Component {
   render() {
-    const { isOpen, onClick } = this.props;
+    const { activeAnchor, isOpen, onClick, setAnchor } = this.props;
+    console.log(activeAnchor);
     return (
       <Container isOpen={isOpen}>
         <IconContainer>
@@ -64,7 +78,12 @@ class Navigation extends Component {
         <Logo />
         <LinksContainer>
           {ALL_LINKS.map((link, index) => (
-            <NavLink key={index}>
+            <NavLink
+              key={index}
+              href={`#${link.title}`}
+              className={activeAnchor === `#${link.title}` ? 'active' : ''}
+              onClick={() => setAnchor(`#${link.title}`)}
+            >
               {link.title}
             </NavLink>
           ))}
@@ -74,4 +93,4 @@ class Navigation extends Component {
   }
 }
 
-export default Navigation;
+export default connect(mapToStateProps, mapDispatchToProps)(Navigation);

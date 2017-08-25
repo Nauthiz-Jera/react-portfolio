@@ -13,6 +13,7 @@ export const FONT_SIZE = {
 };
 
 export const FONT_WEIGHT = {
+  SLIM: '300',
   SLIGHT_BOLD: '600',
   BOLD: 'bold',
   NORMAL: 'normal',
