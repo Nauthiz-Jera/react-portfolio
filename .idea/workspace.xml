@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02e8c341-28d2-4ac6-87cb-61ba957078f1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/constants/experience.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/modules/common/bullet.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/modules/experience/experience.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/modules/skill/skill.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/constants/chart.js" afterPath="$PROJECT_DIR$/src/app/constants/chart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/constants/links.js" afterPath="$PROJECT_DIR$/src/app/constants/links.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/constants/styles.js" afterPath="$PROJECT_DIR$/src/app/constants/styles.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/constants/translations/en.js" afterPath="$PROJECT_DIR$/src/app/constants/translations/en.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/modules/about/about.js" afterPath="$PROJECT_DIR$/src/app/modules/about/about.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/modules/app-container/app-container.js" afterPath="$PROJECT_DIR$/src/app/modules/app-container/app-container.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/modules/common/chart.js" afterPath="$PROJECT_DIR$/src/app/modules/common/chart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/modules/common/section-intro.js" afterPath="$PROJECT_DIR$/src/app/modules/common/section-intro.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/modules/navigation/nagivation.js" afterPath="$PROJECT_DIR$/src/app/modules/navigation/nagivation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/modules/skill/skill.js" afterPath="$PROJECT_DIR$/src/app/modules/skill/skill.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="nagivation.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="nagivation.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/modules/navigation/nagivation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="90" column="8" lean-forward="true" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="8" />
+            <state relative-caret-position="538">
+              <caret line="101" column="24" lean-forward="true" selection-start-line="101" selection-start-column="24" selection-end-line="101" selection-end-column="24" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -92,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="en.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="en.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/constants/translations/en.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="48" column="18" lean-forward="false" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+            <state relative-caret-position="348">
+              <caret line="44" column="27" lean-forward="true" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -195,9 +181,9 @@
         <option value="$PROJECT_DIR$/src/app/constants/experience.js" />
         <option value="$PROJECT_DIR$/src/app/modules/skill/skill.js" />
         <option value="$PROJECT_DIR$/src/app/modules/common/bullet.js" />
-        <option value="$PROJECT_DIR$/src/app/constants/translations/en.js" />
         <option value="$PROJECT_DIR$/src/app/modules/experience/experience.js" />
         <option value="$PROJECT_DIR$/src/app/modules/navigation/nagivation.js" />
+        <option value="$PROJECT_DIR$/src/app/constants/translations/en.js" />
       </list>
     </option>
   </component>
@@ -508,12 +494,12 @@
       <updated>1502593152202</updated>
       <workItem from="1502593154175" duration="3869000" />
       <workItem from="1502752431594" duration="1000" />
-      <workItem from="1503448911665" duration="61133000" />
+      <workItem from="1503448911665" duration="61277000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65003000" />
+    <option name="totallyTimeSpent" value="65147000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -526,8 +512,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="23" width="1920" height="977" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20115851" sideWeight="0.4960452" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20115851" sideWeight="0.4960452" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -862,10 +849,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/modules/skill/skill.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="63" column="33" lean-forward="true" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/modules/navigation/nagivation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="101" column="24" lean-forward="true" selection-start-line="101" selection-start-column="24" selection-end-line="101" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/constants/experience.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/constants/styles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="42" column="4" lean-forward="true" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -880,32 +895,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/constants/translations/en.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="48" column="18" lean-forward="false" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/modules/skill/skill.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="63" column="33" lean-forward="true" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/constants/styles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="42" column="4" lean-forward="true" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/modules/experience/experience.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -916,13 +905,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/modules/navigation/nagivation.js">
+    <entry file="file://$PROJECT_DIR$/src/app/constants/translations/en.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="90" column="8" lean-forward="true" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="348">
+          <caret line="44" column="27" lean-forward="true" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>

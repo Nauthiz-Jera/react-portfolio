@@ -42,8 +42,15 @@ export default {
         'React Library',
         'Ability to pay attention to detail',
         'Ability to adapt',
+        'GIT version control',
       ],
-      bulletGroupTwo: ['MVC principle', 'Redux', 'One way data binding', 'Two way data binding'],
+      bulletGroupTwo: [
+        'MVC principle',
+        'Redux',
+        'One way data binding',
+        'Two way data binding',
+        'SVN version control',
+      ],
       bulletGroupThree: [
         'Right balance of tools',
         'Agile Development Life Cycle',
