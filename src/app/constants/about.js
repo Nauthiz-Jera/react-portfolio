@@ -21,5 +21,10 @@ export const GIT = {
   value: 'https://github.com/Nauthiz-Jera/',
   icon: 'fa fa-github-alt',
 };
+export const LOCATION = {
+  title: EN.portfolio.about.location,
+  value: 'MD (Willing to relocate)',
+  icon: 'fa fa-globe',
+};
 
-export const ALL_ABOUT = [NAME, EMAIL, PHONE, NATIONALITY, GIT];
+export const ALL_ABOUT = [NAME, EMAIL, PHONE, NATIONALITY, LOCATION, GIT];

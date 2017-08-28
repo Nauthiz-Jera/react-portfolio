@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02e8c341-28d2-4ac6-87cb-61ba957078f1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/constants/portfolio.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/modules/portfolio/portfolio-item.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/modules/portfolio/portfolio.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/configs/scrollConfig.js" afterPath="$PROJECT_DIR$/src/app/configs/scrollConfig.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/constants/about.js" afterPath="$PROJECT_DIR$/src/app/constants/about.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/constants/translations/en.js" afterPath="$PROJECT_DIR$/src/app/constants/translations/en.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/modules/app-container/app-container.js" afterPath="$PROJECT_DIR$/src/app/modules/app-container/app-container.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/modules/experience/experience.js" afterPath="$PROJECT_DIR$/src/app/modules/experience/experience.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,14 +31,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="experience.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="experience.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/modules/experience/experience.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-181">
-              <caret line="47" column="20" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+            <state relative-caret-position="431">
+              <caret line="83" column="30" lean-forward="true" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/constants/about.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" column="67" lean-forward="false" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -65,7 +66,7 @@
       <file leaf-file-name="portfolio.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/modules/portfolio/portfolio.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="312">
               <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -77,7 +78,7 @@
       <file leaf-file-name="portfolio-item.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/modules/portfolio/portfolio-item.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
+            <state relative-caret-position="-11">
               <caret line="71" column="12" lean-forward="true" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -89,8 +90,8 @@
       <file leaf-file-name="en.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/constants/translations/en.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="95" column="27" lean-forward="true" selection-start-line="95" selection-start-column="27" selection-end-line="95" selection-end-column="27" />
+            <state relative-caret-position="511">
+              <caret line="37" column="27" lean-forward="false" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -150,7 +151,6 @@
         <option value="$PROJECT_DIR$/src/app/state/actions/anchor.js" />
         <option value="$PROJECT_DIR$/src/app/state/reducers/anchor.js" />
         <option value="$PROJECT_DIR$/src/app/state/root-reducer.js" />
-        <option value="$PROJECT_DIR$/src/app/constants/about.js" />
         <option value="$PROJECT_DIR$/src/app/modules/skills/skills.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/app/constants/chart.js" />
@@ -166,11 +166,12 @@
         <option value="$PROJECT_DIR$/src/app/modules/navigation/nagivation.js" />
         <option value="$PROJECT_DIR$/src/app/modules/app-container/app-container.js" />
         <option value="$PROJECT_DIR$/src/app/configs/scrollConfig.js" />
-        <option value="$PROJECT_DIR$/src/app/constants/translations/en.js" />
         <option value="$PROJECT_DIR$/src/app/modules/portfolio/portfolio.js" />
         <option value="$PROJECT_DIR$/src/app/constants/portfolio.js" />
         <option value="$PROJECT_DIR$/src/app/modules/experience/experience.js" />
         <option value="$PROJECT_DIR$/src/app/modules/portfolio/portfolio-item.js" />
+        <option value="$PROJECT_DIR$/src/app/constants/translations/en.js" />
+        <option value="$PROJECT_DIR$/src/app/constants/about.js" />
       </list>
     </option>
   </component>
@@ -459,12 +460,12 @@
       <updated>1502593152202</updated>
       <workItem from="1502593154175" duration="3869000" />
       <workItem from="1502752431594" duration="1000" />
-      <workItem from="1503448911665" duration="69751000" />
+      <workItem from="1503448911665" duration="69958000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73621000" />
+    <option name="totallyTimeSpent" value="73828000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -732,14 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/constants/about.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="2" lean-forward="false" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/modules/common/section-intro.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -830,22 +823,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/configs/scrollConfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/constants/translations/en.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="95" column="27" lean-forward="true" selection-start-line="95" selection-start-column="27" selection-end-line="95" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/modules/app-container/app-container.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -864,26 +841,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/modules/portfolio/portfolio-item.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="71" column="12" lean-forward="true" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/modules/portfolio/portfolio.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/constants/styles.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -894,11 +851,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/modules/experience/experience.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-181">
-          <caret line="47" column="20" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+        <state relative-caret-position="431">
+          <caret line="83" column="30" lean-forward="true" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/constants/translations/en.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="37" column="27" lean-forward="false" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/modules/portfolio/portfolio-item.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11">
+          <caret line="71" column="12" lean-forward="true" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/modules/portfolio/portfolio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/configs/scrollConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/constants/about.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="67" lean-forward="false" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
+          <folding />
         </state>
       </provider>
     </entry>

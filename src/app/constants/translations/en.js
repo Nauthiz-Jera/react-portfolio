@@ -35,6 +35,7 @@ export default {
       phone: 'Phone',
       nationality: 'Nationality',
       git: 'GitHub',
+      location: 'Location',
     },
     skill: {
       header: 'My Professional Strengths',
