@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
-import { removeHash } from 'react-scrollable-anchor';
 import { ALL_LINKS } from '../../constants/links';
 import { COLORS, PADDING, MARGIN } from '../../constants/styles';
 import { OPACITY } from '../../constants/animations';
@@ -67,9 +66,33 @@ const mapDispatchToProps = dispatch => ({
 });
 
 class Navigation extends Component {
+  constructor(props) {
+    super(props);
+
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll() {
+    let hash = window.location.hash;
+    const { activeAnchor, setAnchor } = this.props;
+
+    if (hash !== activeAnchor) {
+      this.setState(
+        {
+          activeAnchor: hash,
+        },
+        () => setAnchor(hash),
+      );
+    }
+  }
   render() {
     const { activeAnchor, isOpen, onClick, setAnchor } = this.props;
-    console.log(activeAnchor);
     return (
       <Container isOpen={isOpen}>
         <IconContainer>

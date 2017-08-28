@@ -1,0 +1,11 @@
+.c3 .c3-axis-x path, .c3 .c3-axis-x line {
+  fill: transparent;
+}
+
+.c3 .c3-axis-y path, .c3 .c3-axis-y line {
+  fill: #CCCCCC;
+}
+
+.c3-axis-x text {
+  fill: #999999;
+}

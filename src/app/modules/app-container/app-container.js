@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
+import Navigation from '../navigation/nagivation';
 import Home from '../home/home';
 import About from '../about/about';
 import Skill from '../skill/skill';
-import Navigation from '../navigation/nagivation';
+import Experience from '../experience/experience';
 import { menuToggle } from '../../state/actions/menu-toggle';
 
 const PageContainer = styled.div`
@@ -26,10 +27,11 @@ class AppContainer extends Component {
     return (
       <div>
         <Navigation isOpen={toggle} onClick={menuToggle} />
-        <PageContainer>
+        <PageContainer id="pageContainer">
           <Home />
           <About />
           <Skill />
+          <Experience />
         </PageContainer>
       </div>
     );

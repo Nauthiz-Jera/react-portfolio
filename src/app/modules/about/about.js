@@ -10,7 +10,7 @@ const AboutContainer = styled.div`
   display: flex; 
   justify-content: space-between;
   width:100%;
-  height: 100vh;
+  min-height: 75vh;
 `;
 const InfoContainer = styled.div`
   display: flex;
@@ -35,6 +35,7 @@ font-size: ${FONT_SIZE.FONT_20PX};
 const AboutTitle = styled.div`
 display: flex;
 justify-content: flex-start;
+color: ${COLORS.GREY.MIDNIGHT_GREY};
 font-size: ${FONT_SIZE.FONT_20PX};
 font-weight: ${FONT_WEIGHT.SLIGHT_BOLD};
 padding: ${PADDING.QUARTER};
@@ -45,7 +46,7 @@ justify-content: flex-start;
 font-size: ${FONT_SIZE.FONT_14PX};
 font-weight: ${FONT_WEIGHT.SLIGHT_BOLD};
 padding: ${PADDING.QUARTER};
-color: ${COLORS.GREY.NOBEL};
+color: ${COLORS.GREY.MYSTIQUE};
 `;
 const AboutDescription = styled.div`
 width: 100%;
@@ -54,7 +55,7 @@ justify-content: flex-start;
 font-size: ${FONT_SIZE.FONT_16PX};
 font-weight: ${FONT_WEIGHT.SLIGHT_BOLD};
 padding: ${PADDING.QUARTER};
-color: ${COLORS.GREY.NOBEL};
+color: ${COLORS.GREY.MYSTIQUE};
 `;
 
 class About extends Component {

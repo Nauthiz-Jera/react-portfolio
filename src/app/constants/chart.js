@@ -14,9 +14,6 @@ export const SKILL_BAR_CHART = {
     size: {
       width: 525,
     },
-    color: {
-      pattern: ['#FABF62', '#ACB6DD'],
-    },
     data: {
       x: 'x',
       columns: [

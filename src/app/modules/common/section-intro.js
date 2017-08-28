@@ -20,7 +20,7 @@ const SectionDescription = styled.div`
 
 const SectionTitle = styled.div`
   display: flex;
-  padding: 0 ${PADDING.NORMAL};
+  padding: ${PADDING.NORMAL} ${PADDING.HALF};
   font-size: ${FONT_SIZE.FONT_34PX};
   font-weight: ${FONT_WEIGHT.BOLD};
 `;

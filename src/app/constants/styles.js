@@ -38,6 +38,8 @@ export const COLORS = {
     MORTAR: '#585858',
     VERY_LIGHT_GREY: '#CCCCCC',
     NOBEL: '#999999',
+    MYSTIQUE: '#9EA8B6',
+    MIDNIGHT_GREY: '#2F3742',
   },
   RED: {
     CHANTILLY: '#EFCACB', // red - pinkish
@@ -61,15 +63,6 @@ export const COLORS = {
     SAFFRON: '#F5BB39',
     YELLOW: '#ffde00',
   },
-};
-
-export const USE_SHADE = {
-  BLACK: '#000000',
-  BLUE: '#1B529B',
-  GREEN: '#159742',
-  GREY: '#999999',
-  RED: '#EF0B1B',
-  ORANGE: 'BURNT_ORANGE',
 };
 
 export const SCREEN_SIZE = {
