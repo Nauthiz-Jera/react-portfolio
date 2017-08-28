@@ -1,3 +1,3 @@
 import { configureAnchors } from 'react-scrollable-anchor';
 
-configureAnchors({ scrollDuration: 1500 });
+configureAnchors({ offset: -150, scrollDuration: 1500 });

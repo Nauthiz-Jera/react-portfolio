@@ -8,7 +8,7 @@ import { COLORS, FONT_SIZE, FONT_WEIGHT, MARGIN, PADDING } from '../../constants
 
 const ExperienceContainer = styled.div`
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
 `;
 const ExperienceDetails = styled.div`
   display: flex;
@@ -22,7 +22,7 @@ const DetailIntro = styled.div`
   justify-content: flex-start;
   width: 35%;
 `;
-const DetailIcon = styled.i`
+const DetailIcon = styled.div`
   color: ${COLORS.GREY.MYSTIQUE};
   padding: ${PADDING.QUARTER};
   font-size: ${FONT_SIZE.FONT_55PX};
