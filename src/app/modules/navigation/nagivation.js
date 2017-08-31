@@ -96,7 +96,7 @@ class Navigation extends Component {
     return (
       <Container isOpen={isOpen}>
         <IconContainer>
-          <i className="fa fa-bars" aria-hidden="true" onClick={() => onClick(!isOpen)} />
+          {/*<i className="fa fa-bars" aria-hidden="true" onClick={() => onClick(!isOpen)} />*/}
         </IconContainer>
         <Logo />
         <LinksContainer>

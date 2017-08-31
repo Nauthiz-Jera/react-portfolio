@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { FONT_SIZE, FONT_WEIGHT } from '../../constants/styles';
+import { FONT_SIZE } from '../../constants/styles';
 import { TYPE, BLINK_CARET } from '../../constants/animations';
 
 const DescriptionContainer = styled.div`

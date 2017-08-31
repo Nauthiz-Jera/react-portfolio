@@ -36,11 +36,13 @@ export default {
       nationality: 'Nationality',
       git: 'GitHub',
       location: 'Location',
+      description: "I have over 4 years of experience within the development world; a full-stack developer with strong front-end skills. I have a strong passion and love for code and coding, and I'm always looking for opportunities to improve my skills and learn more about development. ",
+      quote: 'Available for freelance work, current stack: MongoDB, React/Angular, Express, Node',
     },
     skill: {
       header: 'My Professional Strengths',
-      quote: '"Quote goes here!"',
-      description: 'Description of skills go here.',
+      quote: '“There is nothing noble in being superior to your fellow man; true nobility is being superior to your former self.”― Ernest Hemingway',
+      description: "My professional strengths lay in JavaScript development, in both front-end and back-end development. I'm adapt in Angular and React, two of the biggest MVC/Flux architectural and frameworks/libraries.I also have background in mySql and knowledge in Express, Mongoose, and MongoDB.",
       knowledge: 'Knowledge',
       bulletGroupOne: [
         'Angular Framework',
@@ -52,8 +54,8 @@ export default {
       bulletGroupTwo: [
         'MVC principle',
         'Redux',
-        'One way data binding',
-        'Two way data binding',
+        'OOP',
+        'Functional Paradigm',
         'SVN version control',
       ],
       bulletGroupThree: [

@@ -30,3 +30,12 @@ export const BLINK_CARET = keyframes`
     to { border-color: transparent }
   50% { border-color: orange; }
 `;
+
+export const ROTATE_360 = keyframes`
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(359deg);
+  }
+`;

@@ -23,7 +23,7 @@ export const GIT = {
 };
 export const LOCATION = {
   title: EN.portfolio.about.location,
-  value: 'MD (Willing to relocate)',
+  value: 'MD, USA (Willing to relocate)',
   icon: 'fa fa-globe',
 };
 

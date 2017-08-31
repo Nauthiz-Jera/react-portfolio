@@ -25,6 +25,7 @@ const SkillContentContainer = styled.div`
 const SkillContent = styled.div`
   display: flex;
   flex-flow: column;
+  width: 50%;
 `;
 const SkillHeader = styled.h1`
   font-weight: ${FONT_WEIGHT.NORMAL};

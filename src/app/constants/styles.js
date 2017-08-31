@@ -40,6 +40,7 @@ export const COLORS = {
     NOBEL: '#999999',
     MYSTIQUE: '#9EA8B6',
     MIDNIGHT_GREY: '#2F3742',
+    DUSK: '#2f3742',
   },
   RED: {
     CHANTILLY: '#EFCACB', // red - pinkish
@@ -65,6 +66,10 @@ export const COLORS = {
   },
 };
 
+export const CURSOR = {
+  POINTER: 'pointer',
+};
+
 export const SCREEN_SIZE = {
   SMALL_SCREEN: '20em', // 320px
   MEDIUM_SCREEN: '40em', // 640px
@@ -75,6 +80,8 @@ export const SCREEN_SIZE = {
 
 export const MARGIN = {
   EXTRA_LARGE: '4em',
+  LARGE_AND_NORMAL: '3em',
+  LARGE_AND_HALF: '2.5em',
   LARGE: '2em',
   NORMAL: '1em',
   THREE_QUARTERS: '.75em',

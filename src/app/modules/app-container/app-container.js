@@ -7,6 +7,7 @@ import About from '../about/about';
 import Skill from '../skill/skill';
 import Experience from '../experience/experience';
 import Portfolio from '../portfolio/portfolio';
+import Contact from '../contact/contact';
 import { menuToggle } from '../../state/actions/menu-toggle';
 
 const PageContainer = styled.div`
@@ -34,6 +35,7 @@ class AppContainer extends Component {
           <Skill />
           <Experience />
           <Portfolio />
+          <Contact />
         </PageContainer>
       </div>
     );

@@ -7,7 +7,7 @@ import { COLORS, FONT_SIZE, FONT_WEIGHT } from '../../constants/styles';
 import TypeWriter from '../typewriter/typewriter';
 import EN from '../../constants/translations/en';
 
-const homeImg = require('../../images/home-image.jpg');
+const homeImg = require('../../assets/images/home-image.jpg');
 
 const HomeDiv = styled.div`
   display: flex;
