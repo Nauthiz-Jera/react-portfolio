@@ -36,7 +36,7 @@ export default {
       nationality: 'Nationality',
       git: 'GitHub',
       location: 'Location',
-      description: "I have over 4 years of experience within the development world; a full-stack developer with strong front-end skills. I have a strong passion and love for code and coding, and I'm always looking for opportunities to improve my skills and learn more about development. ",
+      description: "I have over 4 years of experience within the development world; a full-stack developer with strong front-end skills. I have a strong passion and love for code and coding, and I'm always looking for opportunities to improve my skills and learn more about development. I've custom built this portfolio site to help display my skills and experience. ",
       quote: 'Available for freelance work, current stack: MongoDB, React/Angular, Express, Node',
     },
     skill: {

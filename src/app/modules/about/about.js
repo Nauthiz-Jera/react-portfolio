@@ -62,6 +62,18 @@ color: ${COLORS.GREY.MYSTIQUE};
 word-break: break-word;
 width: 135px;
 `;
+const AboutLink = styled.a`
+link-decoration: none;
+cursor: pointer;
+display: flex;
+justify-content: flex-start;
+font-size: ${FONT_SIZE.FONT_14PX};
+font-weight: ${FONT_WEIGHT.SLIGHT_BOLD};
+padding: ${PADDING.QUARTER};
+color: ${COLORS.GREY.MYSTIQUE};
+word-break: break-word;
+width: 135px;
+`;
 const AboutDescription = styled.div`
   &:before{
     content: '';
@@ -112,9 +124,13 @@ class About extends Component {
                     <AboutTitle>
                       {about.title}
                     </AboutTitle>
-                    <AboutValue>
-                      {about.value}
-                    </AboutValue>
+                    {about.link
+                      ? <AboutLink target="_blank" href={about.value}>
+                          {about.value}
+                        </AboutLink>
+                      : <AboutValue>
+                          {about.value}
+                        </AboutValue>}
                   </IconTitleContainer>
                 </Info>
               ))}

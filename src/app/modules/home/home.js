@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { media } from '../../constants/style-utils';
 import { typeWriterText } from '../../state/actions/type-writer';
-import { COLORS, FONT_SIZE, FONT_WEIGHT } from '../../constants/styles';
+import { COLORS, FONT_SIZE, FONT_WEIGHT, MARGIN, PADDING } from '../../constants/styles';
 import TypeWriter from '../typewriter/typewriter';
 import EN from '../../constants/translations/en';
 
@@ -15,14 +15,12 @@ const HomeDiv = styled.div`
   height: 100vh;
   width: 100%;
 `;
-
 const HomeImage = styled.img`
   height: 100%;
   width: 100vw;
   position: absolute;
   left: 0;
 `;
-
 const TextContainer = styled.div`
   position: absolute;
   bottom: 250px;
@@ -40,6 +38,18 @@ const TextContainer = styled.div`
 const Text = styled.div`
   font-size: ${props => props.fontSize};
   font-weight: ${props => props.fontWeight};
+`;
+const SectionDescription = styled.div`
+  display: flex;
+  padding: ${PADDING.HALF};
+  margin: ${MARGIN.NORMAL} 0;
+  justify-content: center;
+  background-color: ${COLORS.YELLOW.YELLOW};
+  height: 25px;
+  font-size: ${FONT_SIZE.FONT_20PX};
+  font-weight: ${FONT_WEIGHT.BOLD};
+  color: ${COLORS.BLACK.BLACK};
+  width: 200px;
 `;
 
 const mapToStateProps = state => ({
@@ -76,6 +86,9 @@ class Home extends Component {
               ED KIM
             </Text>
             <TypeWriter text={selectedText} />
+            <SectionDescription>
+              Built with React
+            </SectionDescription>
           </TextContainer>
         </HomeDiv>
       </ScrollableAnchor>

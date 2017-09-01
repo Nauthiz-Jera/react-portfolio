@@ -94,7 +94,7 @@ class Navigation extends Component {
     }
   }
   render() {
-    const { activeAnchor, isOpen, onClick, setAnchor } = this.props;
+    const { activeAnchor, isOpen, setAnchor } = this.props;
     return (
       <Container isOpen={isOpen}>
         <IconContainer>
