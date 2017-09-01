@@ -71,9 +71,9 @@ class Contact extends Component {
               View More
             </Title>
             <Info>
-              GitHub
+              View portfolio source code
             </Info>
-            <IconContainer target="_blank" href="https://github.com/Nauthiz-Jera">
+            <IconContainer target="_blank" href="https://github.com/Nauthiz-Jera/react-portfolio">
               <i className="fa fa-github-alt" aria-hidden="true" />
             </IconContainer>
             <DownloadButton onClick={downloadCV}>
