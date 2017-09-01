@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import ScrollableAnchor from 'react-scrollable-anchor';
+import { media } from '../../constants/style-utils';
 import { COLORS, FONT_SIZE, FONT_WEIGHT, MARGIN, PADDING } from '../../constants/styles';
 import EN from '../../constants/translations/en';
 import { ALL_ABOUT } from '../../constants/about';
@@ -74,6 +75,18 @@ display: flex;
 justify-content: flex-start;
 font-size: ${FONT_SIZE.FONT_16PX};
 font-weight: ${FONT_WEIGHT.SLIGHT_BOLD};
+${media.desktop`
+  padding: ${PADDING.HALF};
+  padding-right: ${PADDING.NORMAL};
+`}
+${media.tablet`
+  padding: ${PADDING.HALF};
+  padding-right: ${PADDING.NORMAL};
+`}
+${media.phone`
+  padding: ${PADDING.EXTRA_LARGE};
+  padding-left: ${PADDING.NORMAL};
+`}
 padding: ${PADDING.HALF};
 padding-right: ${PADDING.NORMAL};
 color: ${COLORS.GREY.MYSTIQUE};

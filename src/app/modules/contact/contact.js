@@ -14,7 +14,7 @@ const ContactContainer = styled.div`
 `;
 const Section = styled.div`
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
   width: 50%;
   height: 35vh;
   background-color: ${props => props.color};

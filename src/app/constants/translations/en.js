@@ -42,7 +42,7 @@ export default {
     skill: {
       header: 'My Professional Strengths',
       quote: '“There is nothing noble in being superior to your fellow man; true nobility is being superior to your former self.”― Ernest Hemingway',
-      description: "My professional strengths lay in JavaScript development, in both front-end and back-end development. I'm adapt in Angular and React, two of the biggest MVC/Flux architectural and frameworks/libraries.I also have background in mySql and knowledge in Express, Mongoose, and MongoDB.",
+      description: "My professional strengths lay in JavaScript development, in both front-end and back-end development. I'm adapt in Angular and React, two of the biggest MVC/Flux architectural frameworks/libraries. I also have background in mySql and knowledge in Express, Mongoose, and MongoDB.",
       knowledge: 'Knowledge',
       bulletGroupOne: [
         'Angular Framework',

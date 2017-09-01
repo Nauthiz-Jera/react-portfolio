@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import ScrollableAnchor from 'react-scrollable-anchor';
+import { media } from '../../constants/style-utils';
 import EN from '../../constants/translations/en';
 import SectionIntro from '../common/section-intro';
 import { ALL_EXPERIENCE } from '../../constants/experience';
@@ -12,7 +13,15 @@ const ExperienceContainer = styled.div`
 `;
 const ExperienceDetails = styled.div`
   display: flex;
+${media.desktop`
   flex-flow: row wrap;
+`}
+${media.tablet`
+   flex-flow: row wrap;
+`}
+${media.phone`
+  flex-flow: column;
+`}
   width: 100%;
   margin: ${MARGIN.LARGE} 0;
 `;

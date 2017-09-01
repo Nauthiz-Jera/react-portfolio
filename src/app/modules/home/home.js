@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
 import ScrollableAnchor from 'react-scrollable-anchor';
+import { media } from '../../constants/style-utils';
 import { typeWriterText } from '../../state/actions/type-writer';
 import { COLORS, FONT_SIZE, FONT_WEIGHT } from '../../constants/styles';
 import TypeWriter from '../typewriter/typewriter';
@@ -26,6 +27,14 @@ const TextContainer = styled.div`
   position: absolute;
   bottom: 250px;
   left: 450px;
+  ${media.tablet`
+    left: 25px;
+    top:250px;
+  `}
+  ${media.phone`
+    left: 10px;
+    bottom:150px;
+  `}
   color: ${COLORS.WHITE.WHITE};
 `;
 const Text = styled.div`

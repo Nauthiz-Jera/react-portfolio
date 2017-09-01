@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
 import { ALL_LINKS } from '../../constants/links';
+import { media } from '../../constants/style-utils';
 import { COLORS, PADDING, MARGIN } from '../../constants/styles';
 import { OPACITY } from '../../constants/animations';
 import { anchor } from '../../state/actions/anchor';
@@ -10,15 +11,16 @@ import Logo from '../../modules/logo/logo';
 const Container = styled.div`
   position: fixed;
   overflow: visible;
-  display: block;
   left: 0px;
-  width: 230px;
   height: 100%;
   top: 0px;
+  width: 300px;
   z-index: 999;
+  display: block;
+  ${media.tablet`display: ${props => (props.isOpen ? 'block' : 'none')};`}
+  ${media.phone`display: ${props => (props.isOpen ? 'block' : 'none')};`}
   background: #2f3742;
   padding-bottom: 110px;
-  width: ${props => (props.isOpen ? `20%` : `300px`)};
 `;
 const IconContainer = styled.div`
   display:flex;

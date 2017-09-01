@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
+import { media } from '../../constants/style-utils';
 import Navigation from '../navigation/nagivation';
 import Home from '../home/home';
 import About from '../about/about';
@@ -12,6 +13,8 @@ import { menuToggle } from '../../state/actions/menu-toggle';
 
 const PageContainer = styled.div`
   width: calc(100% - 300px);
+  ${media.tablet`width: ${props => (props.isOpen ? 'calc(100% - 300px)' : '100%')};`}
+  ${media.phone`width: ${props => (props.isOpen ? 'calc(100% - 300px)' : '100%')};`}
   float: right;
 `;
 
