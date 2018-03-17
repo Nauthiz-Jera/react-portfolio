@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import _ from 'lodash';
