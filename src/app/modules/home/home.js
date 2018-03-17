@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
 import ScrollableAnchor from 'react-scrollable-anchor';
+import _ from 'lodash';
+
 import { media } from '../../constants/style-utils';
 import { typeWriterText } from '../../state/actions/type-writer';
 import { COLORS, FONT_SIZE, FONT_WEIGHT, MARGIN, PADDING } from '../../constants/styles';
-import TypeWriter from '../typewriter/typewriter';
 import EN from '../../constants/translations/en';
-
 import homeImg from '../../assets/images/home-image.jpg';
+
+import TypeWriter from '../typewriter/typewriter';
 
 const HomeDiv = styled.div`
   display: flex;
@@ -28,12 +31,10 @@ const TextContainer = styled.div`
   ${media.tablet`
     left: 25px;
     top:250px;
-  `}
-  ${media.phone`
+  `} ${media.phone`
     left: 10px;
     bottom:150px;
-  `}
-  color: ${COLORS.WHITE.WHITE};
+  `} color: ${COLORS.WHITE.WHITE};
 `;
 const Text = styled.div`
   font-size: ${props => props.fontSize};
@@ -61,17 +62,44 @@ const mapDispatchToProps = dispatch => ({
 });
 
 class Home extends Component {
+  static propTypes = {
+    typeWriterText: PropTypes.func.isRequired,
+  };
+
   constructor(props) {
     super(props);
-    let { textIndex, typeWriterText } = this.props;
-    setTimeout(setText, 5000);
-    function setText() {
-      textIndex = textIndex < EN.portfolio.description.personal.length ? textIndex : 0;
-      typeWriterText(EN.portfolio.description.personal[textIndex]);
-      setTimeout(setText.bind(this), 5000);
-      textIndex++;
-    }
+
+    this.state = {
+      textIndex: 0,
+    };
+    this.setText = this.setText.bind(this);
   }
+
+  componentDidMount() {
+    setInterval(this.setText, 5000);
+  }
+
+  shouldComponentUpdate(nextProps) {
+    return !_.isEqual(nextProps, this.props);
+  }
+
+  setText() {
+    const { typeWriterText } = this.props;
+    const { textIndex } = this.state;
+    const { portfolio } = EN;
+
+    const updatedIndex = textIndex < portfolio.description.personal.length - 1 ? textIndex + 1 : 0;
+
+    this.setState(
+      {
+        textIndex: updatedIndex,
+      },
+      () => {
+        typeWriterText(portfolio.description.personal[textIndex]);
+      },
+    );
+  }
+
   render() {
     const { selectedText } = this.props;
     return (
@@ -86,18 +114,12 @@ class Home extends Component {
               ED KIM
             </Text>
             <TypeWriter text={selectedText} />
-            <SectionDescription>
-              Built with React
-            </SectionDescription>
+            <SectionDescription>Built with React</SectionDescription>
           </TextContainer>
         </HomeDiv>
       </ScrollableAnchor>
     );
   }
 }
-
-Home.defaultProps = {
-  textIndex: 0,
-};
 
 export default connect(mapToStateProps, mapDispatchToProps)(Home);

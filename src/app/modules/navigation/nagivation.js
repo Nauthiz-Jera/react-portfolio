@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
+import _ from 'lodash';
+
 import { ALL_LINKS } from '../../constants/links';
 import { media } from '../../constants/style-utils';
 import { COLORS, PADDING, MARGIN } from '../../constants/styles';
 import { OPACITY } from '../../constants/animations';
 import { anchor } from '../../state/actions/anchor';
+
 import Logo from '../../modules/logo/logo';
 
 const Container = styled.div`
@@ -17,13 +20,13 @@ const Container = styled.div`
   width: 300px;
   z-index: 999;
   display: block;
-  ${media.tablet`display: ${props => (props.isOpen ? 'block' : 'none')};`}
-  ${media.phone`display: ${props => (props.isOpen ? 'block' : 'none')};`}
-  background: #2f3742;
+  ${media.tablet`display: ${props =>
+    props.isOpen ? 'block' : 'none'};`} ${media.phone`display: ${props =>
+      props.isOpen ? 'block' : 'none'};`} background: #2f3742;
   padding-bottom: 110px;
 `;
 const IconContainer = styled.div`
-  display:flex;
+  display: flex;
   color: white;
   justify-content: flex-end;
   padding: 5px;
@@ -40,23 +43,23 @@ const LinksContainer = styled.div`
 const NavLink = styled.a`
   display: block;
   cursor: pointer;
-  color:${COLORS.WHITE.WHITE};
+  color: ${COLORS.WHITE.WHITE};
   padding: ${PADDING.THREE_QUARTERS} ${PADDING.NORMAL_AND_HALF};
   text-decoration: none;
-  &:hover{
-    animation: ${OPACITY} .75s;
+  &:hover {
+    animation: ${OPACITY} 0.75s;
     box-shadow: 15px 0 0 0 ${COLORS.YELLOW.YELLOW} inset;
     border-right: 5px solid;
     border-color: ${COLORS.YELLOW.YELLOW};
     color: ${COLORS.YELLOW.YELLOW};
   }
-  &.active{
-    animation: ${OPACITY} .75s;
+  &.active {
+    animation: ${OPACITY} 0.75s;
     box-shadow: 15px 0 0 0 ${COLORS.YELLOW.YELLOW} inset;
     border-right: 5px solid;
     border-color: ${COLORS.YELLOW.YELLOW};
     color: ${COLORS.YELLOW.YELLOW};
-   }
+  }
 `;
 
 const mapToStateProps = state => ({
@@ -73,26 +76,31 @@ class Navigation extends Component {
 
     this.handleScroll = this.handleScroll.bind(this);
   }
+
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
   }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    return !_.isEqual(nextProps, this.props) || !_.isEqual(nextState, this.state);
+  }
+
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
   }
 
   handleScroll() {
     let hash = window.location.hash;
-    const { activeAnchor, setAnchor } = this.props;
+    const { setAnchor } = this.props;
 
-    if (hash !== activeAnchor) {
-      this.setState(
-        {
-          activeAnchor: hash,
-        },
-        () => setAnchor(hash),
-      );
-    }
+    this.setState(
+      {
+        activeAnchor: hash,
+      },
+      () => setAnchor(hash),
+    );
   }
+
   render() {
     const { activeAnchor, isOpen, setAnchor } = this.props;
     return (

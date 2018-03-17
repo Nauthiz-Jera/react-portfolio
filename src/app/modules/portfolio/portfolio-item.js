@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import styled from 'styled-components';
 import { COLORS, FONT_SIZE, PADDING, MARGIN } from '../../constants/styles';
 
@@ -19,9 +19,7 @@ const TechListContainer = styled.ul`
   flex-flow: row wrap;
   padding: 0;
 `;
-const ItemTitle = styled.h2`
-  color: ${COLORS.YELLOW.YELLOW};
-`;
+const ItemTitle = styled.h2`color: ${COLORS.YELLOW.YELLOW};`;
 const TechTitle = styled.div`
   font-size: ${FONT_SIZE.FONT_20PX};
   color: ${COLORS.GREY.MIDNIGHT_GREY};
@@ -45,9 +43,7 @@ const TechList = styled.li`
   flex-flow: row;
   justify-content: center;
 `;
-const ItemDescription = styled.div`
-  color: ${COLORS.GREY.MYSTIQUE};
-`;
+const ItemDescription = styled.div`color: ${COLORS.GREY.MYSTIQUE};`;
 const ItemVideoContainer = styled.div`
   display: flex;
   width: 60%;
@@ -63,36 +59,27 @@ const BorderBottom = styled.div`
   padding: ${PADDING.HALF};
 `;
 
-const ItemVideo = styled.iframe`
-`;
+const ItemVideo = styled.iframe``;
 
-class PortfolioItem extends Component {
+class PortfolioItem extends PureComponent {
   render() {
     const { title, tech, description, link } = this.props;
     return (
       <ItemContainer>
         <ItemInfoContainer>
-          <ItemTitle>
-            {title}
-          </ItemTitle>
-          <TechTitle>
-            Tech
-          </TechTitle>
+          <ItemTitle>{title}</ItemTitle>
+          <TechTitle>Tech</TechTitle>
           <TechListContainer>
             {tech.map((tec, index) => (
               <TechList key={index}>
                 <IconContainer>
                   <i className="fa fa-star-o" aria-hidden="true" />
                 </IconContainer>
-                <IconText>
-                  {tec}
-                </IconText>
+                <IconText>{tec}</IconText>
               </TechList>
             ))}
           </TechListContainer>
-          <ItemDescription>
-            {description}
-          </ItemDescription>
+          <ItemDescription>{description}</ItemDescription>
         </ItemInfoContainer>
         <ItemVideoContainer>
           <ItemVideo

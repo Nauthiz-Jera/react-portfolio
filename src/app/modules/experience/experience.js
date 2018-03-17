@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import styled from 'styled-components';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { media } from '../../constants/style-utils';
@@ -13,16 +13,13 @@ const ExperienceContainer = styled.div`
 `;
 const ExperienceDetails = styled.div`
   display: flex;
-${media.desktop`
+  ${media.desktop`
   flex-flow: row wrap;
-`}
-${media.tablet`
+`} ${media.tablet`
    flex-flow: row wrap;
-`}
-${media.phone`
+`} ${media.phone`
   flex-flow: column;
-`}
-  width: 100%;
+`} width: 100%;
   margin: ${MARGIN.LARGE} 0;
 `;
 const DetailIntro = styled.div`
@@ -68,7 +65,7 @@ const DetailDescription = styled.div`
   padding: ${PADDING.QUARTER};
 `;
 
-class Experience extends Component {
+class Experience extends PureComponent {
   render() {
     return (
       <ScrollableAnchor id={EN.portfolio.links.experience}>
@@ -84,21 +81,13 @@ class Experience extends Component {
                   <i className={experience.icon} aria-hidden="true" />
                 </DetailIcon>
                 <DetailTitle>
-                  <Title>
-                    {experience.title}
-                  </Title>
-                  <TimeFrame>
-                    {experience.timeFrame}
-                  </TimeFrame>
+                  <Title>{experience.title}</Title>
+                  <TimeFrame>{experience.timeFrame}</TimeFrame>
                 </DetailTitle>
               </DetailIntro>
               <DetailBody>
-                <DetailPosition>
-                  {experience.position}
-                </DetailPosition>
-                <DetailDescription>
-                  {experience.description}
-                </DetailDescription>
+                <DetailPosition>{experience.position}</DetailPosition>
+                <DetailDescription>{experience.description}</DetailDescription>
               </DetailBody>
             </ExperienceDetails>
           ))}

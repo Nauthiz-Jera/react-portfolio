@@ -1,5 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
+
 import { COLORS, FONT_SIZE, FONT_WEIGHT, MARGIN, PADDING } from '../../constants/styles';
 
 const SectionIntroContainer = styled.div`
@@ -25,20 +27,16 @@ const SectionTitle = styled.div`
   font-weight: ${FONT_WEIGHT.BOLD};
 `;
 
-class SectionIntro extends Component {
-  render() {
-    const { description, title } = this.props;
-    return (
-      <SectionIntroContainer>
-        <SectionDescription>
-          {description}
-        </SectionDescription>
-        <SectionTitle>
-          {title}
-        </SectionTitle>
-      </SectionIntroContainer>
-    );
-  }
-}
+const SectionIntro = ({ description, title }) => (
+  <SectionIntroContainer>
+    <SectionDescription>{description}</SectionDescription>
+    <SectionTitle>{title}</SectionTitle>
+  </SectionIntroContainer>
+);
+
+SectionIntro.propTypes = {
+  description: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+};
 
 export default SectionIntro;

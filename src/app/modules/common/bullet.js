@@ -1,5 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import _ from 'lodash';
+
 import { COLORS, FONT_SIZE, FONT_WEIGHT, MARGIN, PADDING } from '../../constants/styles';
 
 const KnowledgeBullets = styled.li`
@@ -16,22 +19,24 @@ const IconContainer = styled.div`
   padding: 0 ${PADDING.HALF};
 `;
 
-class Bullet extends Component {
-  render() {
-    const { bullets } = this.props;
-    return (
-      <ul>
-        {bullets.map((bullet, index) => (
-          <KnowledgeBullets key={index}>
-            <IconContainer>
-              <i className="fa fa-superpowers" aria-hidden="true" />
-            </IconContainer>
-            {bullet}
-          </KnowledgeBullets>
-        ))}
-      </ul>
-    );
-  }
-}
+const Bullet = ({ bullets }) => (
+  <ul>
+    {_.map(bullets, (bullet, index) => {
+      const composeBulletKey = `${bullet}-${index}`;
+      return (
+        <KnowledgeBullets key={composeBulletKey}>
+          <IconContainer>
+            <i className="fa fa-superpowers" aria-hidden="true" />
+          </IconContainer>
+          {bullet}
+        </KnowledgeBullets>
+      );
+    })};
+  </ul>
+);
+
+Bullet.propTypes = {
+  bullets: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
 
 export default Bullet;
