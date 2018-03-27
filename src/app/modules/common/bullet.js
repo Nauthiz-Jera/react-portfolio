@@ -31,7 +31,7 @@ const Bullet = ({ bullets }) => (
           {bullet}
         </KnowledgeBullets>
       );
-    })};
+    })}
   </ul>
 );
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
 import _ from 'lodash';
@@ -71,6 +72,15 @@ const mapDispatchToProps = dispatch => ({
 });
 
 class Navigation extends Component {
+  static propTypes = {
+    setAnchor: PropTypes.func.isRequired,
+    activeAnchor: PropTypes.string,
+  };
+
+  static defaultProps = {
+    activeAnchor: '',
+  };
+
   constructor(props) {
     super(props);
 
@@ -78,7 +88,7 @@ class Navigation extends Component {
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('hashchange', this.handleScroll);
   }
 
   shouldComponentUpdate(nextProps, nextState) {
@@ -86,7 +96,7 @@ class Navigation extends Component {
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener('hashchange', this.handleScroll);
   }
 
   handleScroll() {

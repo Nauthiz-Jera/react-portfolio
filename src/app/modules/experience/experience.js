@@ -26,6 +26,7 @@ const DetailIntro = styled.div`
   display: flex;
   flex-flow: row;
   justify-content: flex-start;
+  align-items: center;
   width: 35%;
 `;
 const DetailIcon = styled.div`

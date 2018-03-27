@@ -1,5 +1,13 @@
 import EN from './translations/en';
 
+export const FUNDOPOLIS = {
+  title: EN.portfolio.experience.fundopolis.title,
+  timeFrame: EN.portfolio.experience.fundopolis.timeFrame,
+  position: EN.portfolio.experience.fundopolis.position,
+  description: EN.portfolio.experience.fundopolis.description,
+  icon: 'fa fa-credit-card',
+};
+
 export const ASF = {
   title: EN.portfolio.experience.afs.title,
   timeFrame: EN.portfolio.experience.afs.timeFrame,
@@ -24,4 +32,4 @@ export const DONOR = {
   icon: 'fa fa-address-card-o',
 };
 
-export const ALL_EXPERIENCE = [ASF, ISSI, DONOR];
+export const ALL_EXPERIENCE = [FUNDOPOLIS, ASF, ISSI, DONOR];
