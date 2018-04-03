@@ -10,6 +10,7 @@ import { COLORS, FONT_SIZE, FONT_WEIGHT, MARGIN, PADDING } from '../../constants
 const ExperienceContainer = styled.div`
   width: 100%;
   min-height: 80vh;
+  margin: ${MARGIN.HALF} 0;
 `;
 const ExperienceDetails = styled.div`
   display: flex;

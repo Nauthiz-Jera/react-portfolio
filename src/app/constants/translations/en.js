@@ -6,6 +6,7 @@ export default {
       skill: 'SKILL',
       experience: 'EXPERIENCE',
       portfolio: 'PORTFOLIO',
+      codingSamples: 'CODING_SAMPLES',
       contact: 'CONTACT',
     },
     description: {
@@ -23,6 +24,16 @@ export default {
       experience: {
         description: 'My work experience',
         title: 'Experience',
+      },
+      codingSamples: {
+        description: 'Examples of my code',
+        title: 'Coding Samples',
+        exampleText:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a sem sodales, scelerisque neque ac, auctor velit. Pellentesque eu metus augue. Donec at accumsan ex, vel lacinia nisi. Mauris non mattis arcu. Proin at leo quis dui blandit euismod sit amet nec nibh. Pellentesque pharetra nisl eu consequat eleifend. Vivamus egestas elit quis tincidunt pharetra. Phasellus semper sem libero, nec semper ligula tempus quis. Phasellus tempus finibus tellus, ut convallis dui viverra at.\n' +
+          '\n' +
+          'Ut eget luctus lacus, vel rutrum diam. Pellentesque eu odio nec urna vulputate sollicitudin. Vivamus id libero in massa finibus consequat eget a mauris. Etiam quis dapibus dui, ac tempus sem. Mauris bibendum, tortor id ultricies laoreet, urna orci aliquam mi, sit amet consectetur nisi nulla vel sem. Aliquam sit amet nulla eu urna volutpat ultrices. Cras magna ante, dapibus in lectus a, aliquam mattis justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse potenti. Sed iaculis massa ac lacus viverra, eu ultrices neque consequat. Proin ut venenatis urna.\n' +
+          '\n' +
+          'Proin efficitur rutrum turpis, id pretium enim laoreet eget. Fusce vel lobortis lorem, vitae interdum ligula. Donec sodales dolor in velit iaculis dapibus. Aenean scelerisque ac ex at vestibulum. Nunc tincidunt ex vehicula tempor porttitor. Proin aliquet lobortis elit ut lobortis. In cursus semper varius. Praesent sit amet facilisis tortor. Donec eget libero consequat, accumsan nibh at, auctor magna. Cras a lacus eu justo faucibus varius. Quisque posuere sapien a sollicitudin aliquam. Vestibulum semper nisl velit, non tincidunt odio ultrices vel. Nulla malesuada.',
       },
       portfolio: {
         description: 'My Work',

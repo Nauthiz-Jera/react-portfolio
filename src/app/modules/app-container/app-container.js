@@ -13,6 +13,7 @@ import Skill from '../skill/skill';
 import Experience from '../experience/experience';
 import Portfolio from '../portfolio/portfolio';
 import Contact from '../contact/contact';
+import CodingSamples from '../coding-samples/coding-samples';
 
 const PageContainer = styled.div`
   width: calc(100% - 300px);
@@ -45,6 +46,7 @@ class AppContainer extends Component {
           <Skill />
           <Experience />
           <Portfolio />
+          <CodingSamples />
           <Contact />
         </PageContainer>
       </div>
