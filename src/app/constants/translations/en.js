@@ -103,10 +103,16 @@ export default {
       },
       fundopolis: {
         title: 'Fundopolis',
-        timeFrame: '2017 to Present',
+        timeFrame: '2017 to 2018',
         position: 'Front-End Developer / Mobile',
         description:
-          'Currently Working on a web/mobile application utilizing: React, React-native, React-redux, Redux, Redux-Saga, React-dom-router, Redux-router; to build an investment platform utlizing block-chain technology.',
+          'Worked on a web/mobile application utilizing: React, React-native, React-redux, Redux, Redux-Saga, React-dom-router, Redux-router, Styled-Components; to build an investment platform utilizing block-chain technology.',
+      },
+      endurance: {
+        title: 'Endurance International Group',
+        timeFrame: '2018 to Present',
+        position: 'Senior Front-End Developer',
+        description: 'Currently working using: React, Redux, Redux-thunk, React-dom-router',
       },
     },
     item: {

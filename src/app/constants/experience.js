@@ -1,5 +1,13 @@
 import EN from './translations/en';
 
+export const ENDURANCE = {
+  title: EN.portfolio.experience.endurance.title,
+  timeFrame: EN.portfolio.experience.endurance.timeFrame,
+  position: EN.portfolio.experience.endurance.position,
+  description: EN.portfolio.experience.endurance.description,
+  icon: 'fa fa-globe',
+};
+
 export const FUNDOPOLIS = {
   title: EN.portfolio.experience.fundopolis.title,
   timeFrame: EN.portfolio.experience.fundopolis.timeFrame,
@@ -32,4 +40,4 @@ export const DONOR = {
   icon: 'fa fa-address-card-o',
 };
 
-export const ALL_EXPERIENCE = [FUNDOPOLIS, ASF, ISSI, DONOR];
+export const ALL_EXPERIENCE = [ENDURANCE, FUNDOPOLIS, ASF, ISSI, DONOR];
